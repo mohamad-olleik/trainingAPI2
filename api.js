@@ -8,7 +8,11 @@ const PORT = process.env.PORT || 3030;
 app.get('/', function (req, res) {
     res.send('Hello World')
   })
-  console.log(process.env.mohamad)
+
+  app.get('/test', function (req, res) {
+    res.send('api practice')
+  })
+ 
 
   app.get('/names', (req, res)=> {
     names=[
@@ -18,6 +22,7 @@ app.get('/', function (req, res) {
     ]
     res.send(names)
   })
+
 
 
 app.listen(PORT, () => {
