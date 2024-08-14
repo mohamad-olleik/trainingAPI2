@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3030;
-// var cors = require('cors')
-// app.use(cors())
+var cors = require('cors')
+app.use(cors())
 
 const xlsx=require('xlsx')
 let wb=xlsx.readFile('data.xlsx');
