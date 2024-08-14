@@ -27,6 +27,10 @@ app.get('/', function (req, res) {
     res.send('task done')
   })
 
+  app.get('/test3', function (req, res) {
+    res.send('great job')
+  })
+
 
 
 app.listen(PORT, () => {
