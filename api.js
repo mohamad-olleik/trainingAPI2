@@ -51,6 +51,10 @@ app.get('/', function (req, res) {
     res.send(students)
   })
 
+  app.get('/test4', function (req, res) {
+    res.send('that is it')
+  })
+
 
 
 app.listen(PORT, () => {
